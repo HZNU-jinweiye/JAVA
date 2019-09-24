@@ -1,0 +1,16 @@
+package hello;
+import java.util.Scanner;/*scanner类在java.util包中*/
+public class asdsa {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		Scanner input=new Scanner(System.in);/*创建一个scanner类型的对象，这句话的意思是创建一个scanner对象，并且将特德引用值赋值给变量input*/
+		System.out.println("Enter an integer for seconds :");
+		int seconds = input.nextInt();
+		int minutes = seconds / 60;
+		int remainingSeconds = seconds % 60;
+		System.out.println(seconds + " seconds is " + minutes + " minutes and " + remainingSeconds + " seconds ");
+	}
+
+}
