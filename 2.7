@@ -1,0 +1,17 @@
+package zl_1;
+
+
+public class zl_6 {
+public static void main(String srg[])
+{
+	long totalMilliseconds = System.currentTimeMillis();/*获取从1970.1.1午夜到现在的毫秒数*/
+	long totalSeconds = totalMilliseconds / 1000;
+	long currentSecond = totalSeconds % 60;
+	long totalMinutes = totalSeconds / 60;
+	long currentMinute = totalMinutes % 60;
+	long totalHours = totalMinutes / 60;
+	long currentHour = totalHours % 24;
+	System.out.println("Current time is " + currentHour + ":" + currentMinute + ":" + currentSecond + " GMT ");
+	
+	}
+}
