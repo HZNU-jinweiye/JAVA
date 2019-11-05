@@ -1,10 +1,6 @@
 package hello;
 
-public class Circle {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-	}
+public class TV {
 	int channel = 1;
 	int volumeLevel = 1;
 	boolean on = false;
