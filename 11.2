@@ -19,7 +19,7 @@ public class Circle extends GeometricObject{
 	public void setRadius(double radius){	
 		this.radius = radius;
 	}
-	public double setArea(){
+	public double getArea(){
 		return radius * radius * Math.PI;
 	}
 	public double getDiameter(){
@@ -28,7 +28,7 @@ public class Circle extends GeometricObject{
 	public double getPerimeter(){
 		return 2 * radius * Math.PI;
 	}
-	public void printCIrcle(){
+	public void printCircle(){
 		System.out.println("The circle is created " + getDateCreated() + " and the radius is " + radius);
 	}
 }
