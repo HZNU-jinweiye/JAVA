@@ -1,0 +1,27 @@
+package helloworld;
+
+import java.util.Scanner;
+
+public class array {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int[] mylist = new int[100];
+		int x;
+		System.out.print("Enter the numbers: ");
+//		x = input.nextInt();
+		while((x=input.nextInt()) != 0){
+			mylist[x - 1]++;
+//			x = input.nextInt();
+			}
+		for (int i = 0;i < 100;i++){
+			if(mylist[i] != 0){
+				if(mylist[i] > 1)
+				System.out.println(i+1 + " occurs " + mylist[i] + " times ");
+				else
+				System.out.println(i+1 + " occurs " + mylist[i] + " time ");
+			}
+		}
+	}
+
+}
