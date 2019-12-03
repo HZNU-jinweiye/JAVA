@@ -1,0 +1,38 @@
+package helloworld;
+
+import java.util.Scanner;
+
+public class array {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int[] mylist = new int[10];
+		int[] numberlist = new int[10];
+		int num = 0;
+		int node = 0;
+		System.out.print("Enter ten numbers: ");;
+		for(int i = 0;i < 10;i++){
+			mylist[0]=input.nextInt();
+			if(i == 0){
+				numberlist[0] = mylist[0];
+				num++;
+				node++;
+			}
+			else{
+				for(int j = 0;j < node;j++){
+					if( mylist[i] != numberlist[j]){
+						node++;
+						numberlist[node] = mylist[i];
+						num++;
+					}
+				}
+			}
+		}
+		System.out.println("The number of distinct number is " + num);
+		System.out.print("The distinct numbers are ");
+		for(int i = 0;i <= node;i++){
+			System.out.print( numberlist[i]);
+		}
+	}
+
+}
