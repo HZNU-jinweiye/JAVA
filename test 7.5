@@ -1,0 +1,38 @@
+package test;
+import java.util.Scanner;
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int[] mylist = new int[10];//输入数组
+		int[] numberlist = new int[10];//存放去重后数据的数组
+		int node = 0;
+		System.out.print("Enter ten numbers: ");;
+		for(int i = 0;i < 10;i++){
+			int index = 0;//判断新输入的数值与去重数组是否重复
+			mylist[i]=input.nextInt();
+			if(i == 0){
+				numberlist[i]=mylist[i];
+				node++;
+			}
+			else{
+				for(int j=0;j<node;j++){
+					if(mylist[i] == numberlist[j]){
+						index=1;
+						break;
+					}
+				}
+				if(index == 0){
+					numberlist[node]=mylist[i];
+					node++;
+				}
+			}
+		}
+		System.out.println("The number of distinct number is " + node);
+		System.out.print("The distinct numbers are ");
+		for(int i = 0;i < node;i++){
+		System.out.print(" "+numberlist[i]);
+		}
+	}
+}
