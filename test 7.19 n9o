@@ -1,0 +1,26 @@
+package test;
+import java.util.Scanner;
+public class Array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter list: ");
+		int num = input.nextInt();
+		int[] number = new int[num];
+		for(int i = 0;i < num;i++){
+			number[i]=input.nextInt();
+		}
+		if(isSorted){
+			System.out.println("The list is not sorted");
+		}
+		else
+			System.out.println("The list is alreadt sorted");
+	}
+private static void isSorted(int[] number){
+	int index = 0;
+	for(int i = 0 ;i < num;i++){
+		if()
+	}
+}
+}
