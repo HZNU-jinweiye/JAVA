@@ -11,16 +11,28 @@ public class Array {
 		for(int i = 0;i < num;i++){
 			number[i]=input.nextInt();
 		}
-		if(isSorted){
+		if(!isSorted(number)){
 			System.out.println("The list is not sorted");
 		}
 		else
-			System.out.println("The list is alreadt sorted");
+			System.out.println("The list is already sorted");
 	}
-private static void isSorted(int[] number){
+
+public static boolean isSorted(int[] number){
 	int index = 0;
-	for(int i = 0 ;i < num;i++){
-		if()
-	}
+	if(number.length==1)
+		return true;
+	else if(number.length>1){
+	for(int i = 1 ;i < number.length;i++){
+		if(number[i-1]>number[i]){
+			index=1;
+			return false;
+		}
+}
+}
+	if(index==0)
+	return true;
+	else
+	return false;
 }
 }
